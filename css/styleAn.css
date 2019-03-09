@@ -1,0 +1,96 @@
+* {box-sizing: border-box;}
+
+.contain {
+  position: relative;
+  width: 100%;
+}
+.fa:hover{
+	color:#49A2FF !important;
+	transition: .5s ease;
+	}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+	max-height:300px;
+
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.contain:hover .overlay {
+  opacity: 1;
+}
+
+/***************************************************untuk tranparent image text***********************************************************/
+
+.containTIT {
+    position: relative;
+    
+    margin: 0 auto;
+}
+
+.d-block w-100 {vertical-align: middle;}
+
+.containTIT .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/***************************************************for tombol ***********************************************************/
+/*.tombol span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.tombol span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.tombol:hover span {
+  padding-right: 25px;
+}
+
+.tombol:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+@media(max-width: 786px){
+	.tombol {
+		font-size: 8px !important;
+		padding: 0px;
+		margin: 0px;
+		padding-top:-10px !important;
+		width: 20% !important;
+		margin-left:40% !important;
+		
+	}
+	.tombol span:after {
+	  right: -2px ;
+	}
+	
+}/*
